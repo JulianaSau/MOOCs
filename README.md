@@ -8,11 +8,12 @@
 
 <!-- PROJECT LOGO -->
 
-<div align="center">
+<div align="center" style="display:flex; align-items: center; justify-content: center" flex-direction="row">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/8872447/165779319-34962ccc-3149-466c-b1da-97fd93254520.png">
-    <img src="https://user-images.githubusercontent.com/8872447/165779274-22a190da-3284-487e-bd1e-14983df12cbb.png" width="280" alt="Logo"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://avatars.githubusercontent.com/u/79674464?s=200&v=4">
+    <img src="https://avatars.githubusercontent.com/u/79674464?s=200&v=4" width="80" height="80" alt="Logo"/>
   </picture>
+  <p align="center" style="font-size:30px; margin-top: 10px; margin-left: 10px">OSCCA</p>
 </div>
 
 <h1 align="center">Massive Open Online Courses (MOOCs) for Open Science in Arabic</h1>
@@ -41,10 +42,10 @@
 
 | Technology         | Version | Use                  |
 | ------------------ | ------- | -------------------- |
-| `Prettier`         | v^2.7.1 | Code Formatting      |
+| `Prettier`         | v2.7.1  | Code Formatting      |
 | `React`            | v18.2.0 | Frontend Framework   |
-| `NodeJs`           | v^14    | Environment          |
-| `EsLint`           | v^8.2.0 | Code Linting         |
+| `NodeJs`           | v14     | Environment          |
+| `EsLint`           | v8.2.0  | Code Linting         |
 | `Vite`             | v2.6.8  | Code Bundler         |
 
 ### Backend Technologies
@@ -60,6 +61,99 @@
 - If you like it, leave your star in this project :star2:
 - If you would like to complain/suggest/contribute to this project, feel free to open a issue :heart_decoration:
 - Please follow our [contributing guidelines](https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs/blob/main/CONTRIBUTING.md). 
+
+## Getting Started
+
+### Environment Setup
+
+- Make sure you have nodejs installed by running the following command:
+
+```bash
+node -v
+```
+
+- If the output is not the version of your nodejs installation, install nodejs from [here](https://nodejs.org/en/download/)
+
+*Things to note*
+- Linting has been set up for staged commits in the repository.
+- We're using `eslint` for js linting, and `prettier` for code formating.
+- Please make it a point to install `eslint` and `prettier` plugins on vscode to aid in your coding process.
+- Your code has to be properly formatted and have the correct syntax for you to be able to commit your changes.
+- Make sure you attend to all warnings and errors before you commit your code
+
+### Setting up the Frontend
+
+- Open `Git Bash` terminal inside root project folder
+- cd into the frontend folder by typing
+
+```bash
+cd Frontend
+```
+
+- After ensuring you've installed nodejs install [yarn](https://www.npmjs.com/package/yarn).
+- To install dependencies, run the following command:
+
+```bash
+yarn install
+```
+
+
+### STARTING THE SERVER
+
+- To start the whole application server
+
+```bash
+yarn dev
+```
+
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- You're all set. Happy coding😁
+
+### Creating a production building
+
+```bash
+yarn build
+```
+
+## Things to note as you contribute
+
+- Any page you code has to be responsive.
+- Write clear and concise commit messages.
+- Always run `yarn` after pulling code from the upstream repository.
+- Always, **Always** make pull requests to the **dev** branch, not the main branch. All pull requests to the main branch will not be merged.
+- Please, always test your code and make sure it works correctly before making a pull request
+- Run `yarn format` to format your code before you commit
+- Run `yarn lint` to lint all files in the frontend project directory
+
+### Setting up Backend
+
+Instructions on how to run the backend server:
+
+- Open `Git Bash` terminal inside root project folder
+- cd into the backend folder by typing
+
+```bash
+cd backend_API
+```
+
+- To install dependencies, run the following command:
+
+```bash
+npm install
+```
+
+- create a .env file in the project folder with the `MONGO_URI`, `PORT` variables
+
+#### STARTING THE SERVER
+
+- To start the whole application server
+
+```bash
+npm run dev
+```
+
+- Open your browser on localhost with the port you specified to see the result.
+- You're all set and ready to code😁
 
 ## License
 
@@ -101,24 +195,5 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [stars-url]: https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Open-Science-Community-Saudi-Arabia/MOOCs.svg?style=for-the-badge
 [issues-url]: https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs/issues
-[license-shield]: https://img.shields.io/github/license/Open-Science-Community-Saudi-Arabia/MOOCs.svg?style=for-the-badge
-[license-url]: https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+
+
